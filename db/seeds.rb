@@ -4,7 +4,8 @@ def create_site_admin
                 password: 'asdfasdf',
                 password_confirmation: 'asdfasdf',
                 first_name: "Site",
-                last_name: "Admin")
+                last_name: "Admin",
+                name: Faker::Name.name )
   end
 
   puts "1 site admin created"
@@ -17,7 +18,8 @@ def create_admin
                 password: 'asdfasdf',
                 password_confirmation: 'asdfasdf',
                 first_name: "Admin",
-                last_name: "User")
+                last_name: "User",
+                name: Faker::Name.name )
   end
 
   puts "1 admin created"  
@@ -34,7 +36,8 @@ def create_users
                 password: 'asdfasdf',
                 password_confirmation: 'asdfasdf',
                 first_name: "User#{u+1}",
-                last_name: "User")
+                last_name: "User",
+                name: Faker::Name.name )
   end
 
   puts "#{User.count} users created"
